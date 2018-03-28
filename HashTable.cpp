@@ -48,7 +48,7 @@ int insert(DataType key)
 
 int find(DataType key){
   int address = getHashAddress(key);
-  while(!(hashTable[address].isnull == 0 && hashTable[address].data == key && address <Len))
+  while(!(hashTable[address].isnull == 0 && hashTable[address].data == key && address < Len))
   {
     address++;
   }
@@ -57,8 +57,6 @@ int find(DataType key){
   }
   return address;
 }
-
-
 
 int main(int argc, char *argv[])
 {
